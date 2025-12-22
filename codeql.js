@@ -8,7 +8,7 @@ function parseEntityName(fieldName) {
         return '';
     }
     var entitySplit = replacementFieldNameSplit[0].replace(/\[/g, '');
-    var modifiedFetchXml = fetchXml.replace("&", "&amp")
+    var modifiedFetchXml = fetchXml.replace(/&/g, "&amp");
    
     
     return entitySplit;

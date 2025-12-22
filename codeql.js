@@ -7,7 +7,7 @@ function parseEntityName(fieldName) {
     if (replacementFieldNameSplit.length === 0) {
         return '';
     }
-var entitySplit = replacementFiledNameSplit[0].replace('[', '') 
+    var entitySplit = replacementFieldNameSplit[0].replace(/\[/g, '');
    
     
     return entitySplit;

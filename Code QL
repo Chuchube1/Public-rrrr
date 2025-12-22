@@ -1,1 +1,1 @@
-
+var entitySplit = replacementFiledNameSplit[0].replace('[', '') 

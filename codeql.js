@@ -14,7 +14,7 @@ function parseEntityName(fieldName) {
     return entitySplit;
 }
 
-// Test cases
+// Test cases 6787575646453535365
 console.log(parseEntityName("[account].name")); // "account"
 console.log(parseEntityName("contact].email[")); // "contact"
 console.log(parseEntityName("lead")); // "lead"

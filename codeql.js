@@ -9,7 +9,8 @@ function parseEntityName(fieldName) {
 
     }
     //Tet//
-    var entitySplit = replacementFieldNameSplit[0].replace(/\[/g, '');
+    var entitySplit = replacementFieldNameSplit[0].replace('[', '');
+    var fieldNameSplit = replacementFieldNameSplit[1].replace(']', '');
     var modifiedFetchXml = fetchXml.replace("&", "&amp")
    
     

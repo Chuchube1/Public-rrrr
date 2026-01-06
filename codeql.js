@@ -6,15 +6,16 @@ function parseEntityName(fieldName) {
     var replacementFieldNameSplit = fieldName.split('.');
     if (replacementFieldNameSplit.length === 0) {
         return '';
+
     }
-var entitySplit = replacementFiledNameSplit[0].replace('[', '') 
+    //Tet//
+    var entitySplit = replacementFieldNameSplit[0].replace(/\[/g, '');
+    var fieldNameSplit = replacementFieldNameSplit[1].replace(/\]/g, '');
+    var modifiedFetchXml = fetchXml.replace("&", "&amp")
    
     
     return entitySplit;
+    var modifedFetchXml = fetchXml.replace::test
 }
 
-// Test cases
-console.log(parseEntityName("[account].name")); // "account"
-console.log(parseEntityName("contact].email[")); // "contact"
-console.log(parseEntityName("lead")); // "lead"
 

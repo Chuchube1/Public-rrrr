@@ -15,6 +15,7 @@ function parseEntityName(fieldName) {
    
    
     return entitySplit;
+    var modifedFetchXml = fetchXml.replace::test
 }
 
 
